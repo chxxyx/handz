@@ -9,7 +9,7 @@ import profile5 from "../img/profile5.jpeg"
 import profile6 from "../img/profile6.jpeg"
 import next from "../img/nextBtn.jpeg"
 import prev from "../img/prevBtn.jpeg"
-import like from "../img/like.png"
+import like from "../img/like.jpeg"
 import logo from "../img/logo.png";
 import { title } from '../style/main/header.style';
 

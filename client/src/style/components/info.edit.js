@@ -114,6 +114,7 @@ export const card_img = styled.img`
   height: 300px;
   border-radius: 10px;
   border: 0.5px white solid;
+  object-fit: cover;
   /* margin-top: 0; */
 `
 export const modal_card_img = styled.img`
