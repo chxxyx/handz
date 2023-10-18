@@ -52,7 +52,7 @@ export const recruit_button = styled(Link)`
   background-color: #848CF1;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
   margin-left: auto;
   font-weight: 200;
@@ -106,6 +106,7 @@ export const list_card = styled.div`
 export const card_img = styled.img`
   width: 100%;
   height: 170px;
+  object-fit: cover;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-bottom: 1px solid lightgray;

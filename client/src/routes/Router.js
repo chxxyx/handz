@@ -18,7 +18,7 @@ function Router() {
             <Routes>
                 <Route path='/' element={<Section />} />
                 <Route path='/list/:params' element={<RecruitList />} />
-                <Route path='/user/info/:userId' element={<UserInfo />} />
+                <Route path='/user/info/' element={<UserInfo />} />
                 <Route path='/project' element={<Recruit />} />
                 <Route path='/project/detail/:id' element={<RecruitEdit />} />
                 <Route path='/detail/:id' element={<RecruitDetail />} />

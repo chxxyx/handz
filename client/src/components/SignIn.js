@@ -10,7 +10,9 @@ function SignIn() {
   const handleSignIn = () => {
 
     alert('로그인 성공!');
-    window.location.href = '/'; 
+    // window.location.href = '/'; 
+    navigate('/');
+    window.location.href = '/'; // 로그아웃 후 홈페이지로 이동
   }
 
   return (

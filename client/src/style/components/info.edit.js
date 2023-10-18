@@ -67,7 +67,7 @@ export const info_card_box = styled.div`
 `
 
 export const info_mycard = styled.div`
-  width: 400px;
+  width: 390px;
   height: 550px;
   border-radius: 10px;
   /* border: 1px solid darkgray; */
@@ -86,12 +86,12 @@ export const info_openProjects_content = styled.div`
   border-radius: 10px;
   text-align: center;
   margin-top: 20px;
-  background: linear-gradient(to top, rgba(78, 65, 203, 0.7), #C694C9);
+  background: linear-gradient(to left, rgb(132, 140, 241, 0.5), rgb(198, 148, 201, 0.6));
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
 `
 
 export const info_currentProjects_content = styled.div`
@@ -100,15 +100,16 @@ export const info_currentProjects_content = styled.div`
   border-radius: 10px;
   text-align: center;
   margin-top: 20px;
-  background: linear-gradient(to top, rgba(78, 65, 203, 0.7), #C694C9);
+  background: linear-gradient(to left, rgb(132, 140, 241, 0.5), rgb(198, 148, 201, 0.6));
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
 `
 
 export const card_img = styled.img`
+  margin-top: 20px;
   width: 300px;
   height: 300px;
   border-radius: 10px;
@@ -125,9 +126,9 @@ export const modal_card_img = styled.img`
 `
 
 export const card_dev = styled.div`
-  font-size: x-large;
+  font-size: 30px;
   font-weight: 900;
-  margin: 10px;
+  margin: 15px 0 10px 0;
   color: white;
 `
 export const card_nickname = styled.div`
@@ -144,7 +145,7 @@ export const card_stack = styled.div`
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  overflow: scroll;
+  overflow: auto;
 `
 
 export const info_colum_second = styled.div`
@@ -159,10 +160,11 @@ export const info_colum_second = styled.div`
 `
 
 export const info_card_span = styled.span`
-      font-weight: 300;
+      font-weight: 400;
       font-size: 20px;
       margin-top: 20px;
       margin-left: 5px;
+
       color: black;
 `
 
@@ -269,7 +271,9 @@ export const modal_colum_first = styled.div`
     /* margin-top: 50px; */
     margin-left: 0;
     margin-right: 30px;
-    border: 0.5px solid gray;
+    /* border: 0.5px solid gray; */
+    background: linear-gradient(to left, rgb(132, 140, 241, 0.5), rgb(198, 148, 201, 0.6));
+
    border-radius: 10px;
     margin-top: 30px;
     padding-top: 0;
@@ -279,7 +283,7 @@ export const modal_colum_first = styled.div`
 export const modal_img = styled.img`
     width: 80%; /* 이미지를 부모 요소의 가로 크기에 맞춥니다. */
     height: auto; /* 이미지를 부모 요소의 세로 크기에 맞춥니다. */
-    border: 0.1px lightgray solid;
+    /* border: 0.1px lightgray solid; */
     border-radius: 10px;
     margin-bottom: 30px;
     /* margin-top: 0; */
@@ -309,11 +313,12 @@ export const modal_card_nicnkname_input = styled.input`
       width: 78%;
       height: 50px;
       display: flex;
-      border: 0.5px solid gray;
+      border: none;
+      /* border: 0.5px solid gray; */
       border-radius: 10px;
       font-family: inherit;
       font-weight: 100;
-      font-size: 20px;
+      font-size: 15px;
       color: gray;
 `
 export const modal_card_span_title = styled.span`
@@ -321,7 +326,8 @@ export const modal_card_span_title = styled.span`
       font-size: 20px;
       margin-right: auto;
       margin-left: 38px;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      margin-top: 10px;
 `
 
 export const modal_card_span = styled.span`
@@ -346,7 +352,7 @@ export const modal_card_spanBox = styled.div`
 `
 export const modal_card_div = styled.div`
   margin-right: auto;
-  border: 0.1px solid lightgray;
+  /* border: 0.1px solid lightgray; */
   border-radius: 10px;
   margin-bottom: 10px;
   width: 100%;
@@ -356,7 +362,7 @@ export const modal_card_div = styled.div`
 
 export const modal_role_div = styled.div`
   margin-right: auto;
-  border: 0.5px solid gray;
+  /* border: 0.5px solid gray; */
   border-radius: 10px;
   margin-bottom: 10px;
   width: 100%;
@@ -365,9 +371,11 @@ export const modal_role_div = styled.div`
   justify-content: center;
   align-items: center;
 `
+
 export const modal_stack_div = styled.div`
   margin-right: auto;
-  border: 0.5px solid gray;
+  /* border: 0.5px solid gray; */
+  background-color: rgb(150, 149, 158, 0.18);
   border-radius: 10px;
   width: 100%;
   height: 270px;
@@ -390,7 +398,6 @@ export const modal_stack_li = styled.li`
 
   margin: 2px;
   border-radius: 18px;
-  border: 1px #848CF1 solid;
   padding: 5px 10px;
   font-size: 12px;
   background-color: white;
@@ -425,7 +432,7 @@ export const modal_stack_insert_input = styled.input`
       width: 77%;
       height: 30px;
       display: flex;
-      border: 0.5px solid #848CF1;
+      border: none;
       border-radius: 10px;
       font-family: inherit;
       font-weight: 100;

@@ -12,7 +12,7 @@ import profile4 from "../img/listProfile4.jpeg"
 import profile5 from "../img/listProfile5.jpeg"
 import profile6 from "../img/listProfile6.jpeg"
 import mz2mo from '../img/mz2mo.png';
-import list2 from '../img/list2.png';
+import list2 from '../img/list5.png';
 import next from "../img/nextBtn.jpeg"
 import prev from "../img/prevBtn.jpeg"
 
@@ -103,11 +103,34 @@ function RecruitDetail() {
                         <Style.detail_colum_first>
 
                             <Style.detail_img src={mz2mo} />
+                            <Style.developRole>Back-End: 2</Style.developRole>
+                          
+                          <Style.stack_div>
+
+                          <Style.list_page_btnBox>
+                                              {currentPage > 1 && (
+                                <Style.list_page_btn src={prev} onClick={goToPreviousPage} /> 
+                              )}
+                          </Style.list_page_btnBox>
+
+                          {currentStacks.map((stack, index) => (
+                            <Style.stack_ul>
+                              <Style.stack_li key={index}>{stack.stack}</Style.stack_li>
+                            </Style.stack_ul>
+                          ))}  
+                        <Style.list_page_btnBox>
+                        {endIndex < stacks.length && (
+                              <Style.list_page_btn src={next} onClick={goToNextPage} /> 
+                            
+                            )}
+                        </Style.list_page_btnBox>
+
+                          </Style.stack_div>
+
+
+                          
+                          <Style.date>23.11 ~ 23.12</Style.date>
                          
-                            <Style.detail_colum_first_btns>
-                              <Style.detail_btns_edit to={`/project/detail/${id}`}>Edit</Style.detail_btns_edit>
-                              <Style.detail_btns_del>Delete</Style.detail_btns_del>
-                            </Style.detail_colum_first_btns>
                             
                             <MemberList users={users} />
 
@@ -115,45 +138,27 @@ function RecruitDetail() {
                      
        
                         <Style.detail_colum_second>
-                          <Style.contentBox1>
-                  
-                            <Style.developRole>Back-End: 2</Style.developRole>
-                          
-                            <Style.stack_div>
-
-                            <Style.list_page_btnBox>
-                                                {currentPage > 1 && (
-                                  <Style.list_page_btn src={prev} onClick={goToPreviousPage} /> 
-                                )}
-                            </Style.list_page_btnBox>
-
-                            {currentStacks.map((stack, index) => (
-                              <Style.stack_ul>
-                                <Style.stack_li key={index}>{stack.stack}</Style.stack_li>
-                              </Style.stack_ul>
-                            ))}  
-                          <Style.list_page_btnBox>
-                          {endIndex < stacks.length && (
-                                <Style.list_page_btn src={next} onClick={goToNextPage} /> 
-                              
-                              )}
-                          </Style.list_page_btnBox>
-
-                            </Style.stack_div>
-
-
-                            
-                            <Style.date>23.11 ~ 23.12</Style.date>
-                          </Style.contentBox1>
 
                           <Style.contentBox2>
                             <Style.content>
-                              "심플 썸네일"은 썸네일 생성 데스크톱 앱이에요!
-                            반응형으로 확장 개발 계획이 있어서, 현재 안드로이드 모바일도 지원합니다!
-                            3초만에 나만의 썸네일을 만들어보아요 🙂
+                           노래와 어울리는 이모지를 투표하고, 사용자만의 플레이리스트를 
+                           만드는 음악 어플리케이션을 제작하려고 합니다 !
+                           현재는 Spotify Open API를 이용해서 개발할 계획입니다 ~
+
               
                             </Style.content>
                           </Style.contentBox2>
+
+                          <Style.contentBox1>
+
+                          <Style.detail_colum_first_btns>
+                            <Style.detail_btns_edit to={`/project/detail/${id}`}>Edit</Style.detail_btns_edit>
+                            <Style.detail_btns_del>Delete</Style.detail_btns_del>
+                          </Style.detail_colum_first_btns>
+
+
+                          </Style.contentBox1>
+
 
 
                         </Style.detail_colum_second>
@@ -165,7 +170,7 @@ function RecruitDetail() {
 
                 )}
 
-        {id === '2' && (
+        {id === '5' && (
 
           <Style.detail_section>
           <Style.detail>
@@ -175,52 +180,47 @@ function RecruitDetail() {
 
             <Style.detail_colum_first>
               <Style.detail_img src={list2} />
+
+              <Style.developRole>Back-End: 2</Style.developRole>
+                          
+                          <Style.stack_div>
+
+                          <Style.list_page_btnBox>
+                                              {currentPage > 1 && (
+                                <Style.list_page_btn src={prev} onClick={goToPreviousPage} /> 
+                              )}
+                          </Style.list_page_btnBox>
+
+                          {currentStacks.map((stack, index) => (
+                            <Style.stack_ul>
+                              <Style.stack_li key={index}>{stack.stack}</Style.stack_li>
+                            </Style.stack_ul>
+                          ))}  
+                        <Style.list_page_btnBox>
+                        {endIndex < stacks.length && (
+                              <Style.list_page_btn src={next} onClick={goToNextPage} /> 
+                            
+                            )}
+                        </Style.list_page_btnBox>
+
+                          </Style.stack_div>
+
+
+                          
+                          <Style.date>23.11 ~ 23.12</Style.date>
               <Style.detail_btn onClick={handleApplyClick}>
                 {isApplicationComplete ? '지원완료' : '지원하기'}
               </Style.detail_btn>
             </Style.detail_colum_first>
 
             <Style.detail_colum_second>
-            <Style.contentBox1>
-                  
-                  <Style.developRole>Back-End: 2</Style.developRole>
-                
-                  <Style.stack_div>
-
-                  <Style.list_page_btnBox>
-                                      {currentPage > 1 && (
-                        <Style.list_page_btn src={prev} onClick={goToPreviousPage} /> 
-                      )}
-                  </Style.list_page_btnBox>
-
-                  {currentStacks.map((stack, index) => (
-                    <Style.stack_ul>
-                      <Style.stack_li key={index}>{stack.stack}</Style.stack_li>
-                    </Style.stack_ul>
-                  ))}  
-                <Style.list_page_btnBox>
-                {endIndex < stacks.length && (
-                      <Style.list_page_btn src={next} onClick={goToNextPage} /> 
-                    
-                    )}
-                </Style.list_page_btnBox>
-
-                  </Style.stack_div>
-                  
-                  <Style.date>23.11 ~ 23.12</Style.date>
-                </Style.contentBox1>
-
-                <Style.contentBox2>
-                  <Style.content>
-                    "심플 썸네일"은 썸네일 생성 데스크톱 앱이에요!
-                  반응형으로 확장 개발 계획이 있어서, 현재 안드로이드 모바일도 지원합니다!
-                  3초만에 나만의 썸네일을 만들어보아요 🙂
-    
-                  </Style.content>
-                </Style.contentBox2>
-
-
-
+            <Style.contentBox3>
+                            <Style.content>
+                            실패에 대한 회고와 기록을 영수증으로 출력해 
+                            공유할 수 있는 프로젝트를 진행 중인데, 백엔드 개발자가 부족해 모집 글 올려봅니당 ~
+             
+                            </Style.content>
+                          </Style.contentBox3>
 
             </Style.detail_colum_second>
 

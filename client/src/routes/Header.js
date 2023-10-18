@@ -28,7 +28,7 @@ const Header = () => {
           {isLoggedIn ? (
               <Style.right>
                 <Style.signin onClick={handleSignOut}>SignOut</Style.signin>
-              <Style.signup to={`/user/info/:userId`}>My Card</Style.signup>
+              <Style.signup to='/user/info/'>My Card</Style.signup>
               </Style.right>
           ) : (
             <Style.right>

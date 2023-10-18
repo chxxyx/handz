@@ -27,7 +27,7 @@ export const detail_pro_name = styled.div`
 export const detail_colums = styled.div`
    display: flex;
   /* flex-direction: column; */
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 `
 
@@ -39,6 +39,7 @@ export const detail_colum_first = styled.div`
   height: 100%;
   text-align: center;
   margin: 30px;
+  height: 100%;
   /* display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,11 +61,11 @@ export const detail_btn = styled.div`
   border: white 0.1px solid;
   border-radius: 4px;
   cursor: pointer;
-  font-size: x-large;
+  font-size: 20px;
   font-weight: 100;
-  margin-top: 30px;
+  margin-top: 25px;
   width: 90%;
-  height: 40px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,18 +80,20 @@ export const detail_btn = styled.div`
 
 export const detail_colum_first_btns = styled.div`
   display: flex;
-  margin-top: 20px;
+  margin-top: 90px;
   justify-content: center;
   align-items: center;
   padding: 0;
+  margin-left: auto;
+  /* margin-right: 20px; */
 `
 export const detail_btns_edit = styled(Link)`
   text-decoration: none;
-  width: 250px;
+  width: 80px;
   height: 30px;
   padding: 10px 20px;
   border: none;
-  border-radius: 17px;
+  border-radius: 4px;
   cursor: pointer;
   font-weight: 200;
   color: white;
@@ -98,17 +101,17 @@ export const detail_btns_edit = styled(Link)`
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin-right: 25px;
+  margin-right: 20px;
   background: linear-gradient(to left, rgb(132, 140, 241, 0.9), rgb(198, 148, 201, 0.6));
   background-color: #848CF1;
 `
 
 export const detail_btns_del =styled.div`
-  width: 250px;
+  width: 80px;
   height: 30px;
   padding: 10px 20px;
   border: none;
-  border-radius: 17px;
+  border-radius: 4px;
   cursor: pointer;
   font-weight: 200;
   color: white;
@@ -116,7 +119,7 @@ export const detail_btns_del =styled.div`
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin-left: 25px;
+  margin-left: 20px;
   background: linear-gradient(to left, rgb(132, 140, 241, 0.9), rgb(198, 148, 201, 0.6));
   background-color: #848CF1;
 `
@@ -251,7 +254,8 @@ export const stack_li = styled.li`
 export const contentBox1 = styled.div`
   display: flex;
   flex-direction: column;
-  border: 0.1px solid lightgray;
+  /* border: 0.1px solid lightgray; */
+  /* background: rgb(204, 180, 255, 0.18); */
   border-radius: 4px;
   margin-top: 0x;
   /* justify-content: left; */
@@ -267,7 +271,7 @@ export const date = styled.div`
 export const developRole = styled.div`
   margin-top: 10px;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,21 +279,42 @@ export const developRole = styled.div`
 `
 
 export const contentBox2 = styled.div`
-  margin-top: 10px;
 
   display: flex;
   flex-direction: column;
-  border: 0.1px solid lightgray;
+  /* border: 0.1px solid lightgray; */
+  background: rgb(204, 180, 255, 0.18);
   border-radius: 4px;
   padding: 40px;
-  height: 230px;
-  overflow: scroll;
+  height: 300px;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+
+
+`
+
+export const contentBox3 = styled.div`
+
+  display: flex;
+  flex-direction: column;
+  /* border: 0.1px solid lightgray; */
+  background: rgb(204, 180, 255, 0.18);
+  border-radius: 4px;
+  padding: 40px;
+  height: 400px;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+
+
 `
 
 export const content = styled.div`
-  margin-left: auto;
-  font-size: 15px;
-  font-weight: 400;
+  /* margin-left: auto; */
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
 `
 
 export const list_page_btn = styled.img`
