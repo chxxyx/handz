@@ -31,7 +31,7 @@ export const right = styled.div`
 export const signup = styled(Link)`
  text-decoration: none;
   cursor: pointer;
-  margin: 5px;
+  margin: 25px;
   color: white;
   font-weight: 200;
 `;
@@ -50,7 +50,7 @@ export const mypage = styled(Link)`
   cursor: pointer;
   color: white;
   font-weight: 200;
-  margin: 30px;
+  margin-left: 10px;
 `;
 
 export const header_a = styled(Link)`

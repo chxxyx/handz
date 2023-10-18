@@ -3,9 +3,15 @@
 /* Raleway 폰트 임포트 */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
 
+
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&family=Noto+Serif+KR&display=swap'); */
+/* font-family: 'Nanum Gothic', sans-serif; */
+/* font-family: 'Nanum Myeongjo', serif; */
+/* font-family: 'Noto Serif KR', serif; */
+
 /* 전체 페이지에 폰트 스타일 적용 */
 body {
-  font-family: 'Raleway', sans-serif; /* Raleway 폰트 적용 */
+  font-family: 'Raleway', sans-serif; 
   background: linear-gradient(to left, #4E41CB, #C694C9);
   margin: 0;
   padding: 0;

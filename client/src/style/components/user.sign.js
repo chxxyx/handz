@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
-export const sign_section = styled.div`
+export const SignSection = styled.div`
  padding: 0 50px 0 50px;
  display: flex;
  justify-content: center;
  align-items: center;
 `
 
-export const sign_box = styled.div`
+export const SignBox = styled.div`
     margin: 50px 80px 0 80px;
     padding: 50px;
     width: 300px;
@@ -16,7 +16,7 @@ export const sign_box = styled.div`
     border-radius: 20px;
     border: 1px solid #3E2BB7;
 `
-export const sign_form = styled.form`
+export const SignForm = styled.form`
 
 display: flex;
     flex-direction: column;
@@ -24,7 +24,8 @@ display: flex;
     align-items: center; /* 가로 가운데 정렬 */
 `
 
-export const sign_form_btn = styled.button`
+
+export const SignFormBtn = styled.button`
     text-decoration: none;
     padding: 10px 20px;
     background: #4E41CB;
@@ -38,7 +39,7 @@ export const sign_form_btn = styled.button`
     margin-top: 30px;
 `
 
-export const sign_input = styled.input`
+export const SignInput = styled.input`
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #4E41CB;

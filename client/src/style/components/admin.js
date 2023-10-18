@@ -29,7 +29,7 @@ export const admin_project_info_box = styled.div`
 `
 export const admin_info_name = styled.h1`
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 900;
     margin-top: 20px;
     margin-right: 40px;
 `
@@ -56,6 +56,7 @@ export const admin_continue = styled.div`
     props.active
       ?
       css`
+          background: linear-gradient(to left, rgb(132, 140, 241, 0.9), rgb(198, 148, 201, 0.6));
           background-color: #848CF1;
         `
       :  css`
@@ -85,7 +86,8 @@ export const admin_complete = styled.div`
     props.active
       ?
       css`
-          background-color: #848CF1;
+           background: linear-gradient(to left, rgb(132, 140, 241, 0.9), rgb(198, 148, 201, 0.6));
+            background-color: #848CF1;
         `
       :  css`
           background-color: white;
@@ -99,6 +101,8 @@ export const admin_row_second = styled.div`
     justify-content: space-around;
     text-align: center;
     margin-top: 20px;
+ align-items: center;
+ text-align: center;
 `
 
 export const admin_second_box = styled.div`
@@ -121,21 +125,26 @@ export const admin_usercard = styled.div`
   /* border: 1px solid darkgray; */
   text-align: center;
 
-  /* background: linear-gradient(to left, rgb(132, 140, 241, 0.9), rgb(198, 148, 201, 0.6)); */
+  background: linear-gradient(to left, rgb(132, 140, 241, 0.9), rgb(198, 148, 201, 0.6));
   background-color: #848CF1;
-  /* background-color: rgb(198, 148, 201, 0.2); */
+  /* background-color: rgb(198, 148, 201, 0.); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `
 
-export const card_img = styled.img`
-  width: 75%;
+export const card_imgbox = styled.div`
+  width: 150px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 0.5px white solid;
-  /* margin-top: 0; */
+`
+export const card_img = styled.img`
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
 `
 
 export const card_dev = styled.div`
@@ -250,4 +259,75 @@ export const ModalClearImg = styled.img`
     height: auto;
     position: relative; /* 추가: position을 설정합니다. */
     z-index: 0; /* 추가: ModalClearText 뒤에 배치합니다. */
+`
+
+export const list_flex_box = styled.div`
+  display: flex;
+`
+
+export const list_page_btn = styled.img`
+  /* margin: 0 10px 0 10px; */
+  /* font-siz: medium; */
+  /* font-weight: 100; */
+  width: 20px;
+  height: 30px;
+  cursor: pointer;
+  color: black;
+`
+
+export const list_page_btnBox = styled.div`
+ width: 30px;
+ height: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+`
+
+export const stack_div = styled.div`
+  margin-left: auto;
+  /* border: 0.5px solid gray;
+  border-radius: 10px; */
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+  padding: 0;
+`
+
+export const stack_ul = styled.ul`
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  /* margin-left: auto; */
+  margin: 5px 10px 0 10px;
+  padding: 0;
+  /* margin: 10px 10px; */
+`
+
+export const stack_li = styled.li`
+  /* margin: 2px;
+  border-radius: 18px;
+  border: 1px #848CF1 solid;
+  padding: 8px 25px 8px 25px ;
+  font-size: 15px;
+  background-color: white;
+  color: #848CF1; */
+  margin: 5px 4px 5px 4px;
+  border-radius: 18px;
+  border: 1px white solid;
+  padding: 8px 20px;
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+`
+
+export const card_box = styled.div`
+  display: flex;
 `

@@ -22,27 +22,29 @@ export const info_div_box = styled.div`
     align-items: center; /* 세로 가운데 정렬 */
     padding: 0;
     font-weight: 900;
-    font-size: xx-large;
-    margin-left: 40px;
+    font-size: 40px;
+    margin-left: 50px;
 `
 
 export const info_colum_first = styled.div`
   display: flex;
   flex-direction: column;
   margin-right: 50px;
-  margin-left: 20px;
+  margin-left: 0;
 `
 
-export const info_update_btn_div = styled.div`
+export const info_update_btn_div = styled.img`
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 0;
   background: white;
-  color: #4E41CB;
-  border: 1px #4E41CB solid;
+  /* background: rgb(204, 180, 255, 0.5); */
+  /* color: #C5AAFF; */
+  color: gray;
+  /* border: 1px #C5AAFF solid; */
   border-radius: 10px;
   cursor: pointer;
   margin-left: auto;
-  font-weight: 200;
+  font-weight: 300;
   text-align: center;
   margin-bottom: 0;
   width: 10%;
@@ -52,6 +54,11 @@ export const info_update_btn_div = styled.div`
     color: #848CF1;
     border: 1px solid #848CF1;
   } */
+`
+
+export const info_update_img_btn = styled.img`
+  width: 20px;
+  height: 20px;
 `
 
 export const info_card_box = styled.div`
@@ -73,12 +80,48 @@ export const info_mycard = styled.div`
   align-items: center;
 `
 
+export const info_openProjects_content = styled.div`
+  width: 500px;
+  height: 220px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  background: linear-gradient(to top, rgba(78, 65, 203, 0.7), #C694C9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+`
+
+export const info_currentProjects_content = styled.div`
+  width: 500px;
+  height: 220px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  background: linear-gradient(to top, rgba(78, 65, 203, 0.7), #C694C9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+`
+
 export const card_img = styled.img`
   width: 300px;
-  height: auto;
+  height: 300px;
   border-radius: 10px;
   border: 0.5px white solid;
   /* margin-top: 0; */
+`
+export const modal_card_img = styled.img`
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  border: 0.5px white solid;
+  object-fit: cover;
+  margin-bottom: 10px;
 `
 
 export const card_dev = styled.div`
@@ -95,12 +138,13 @@ export const card_nickname = styled.div`
 `
 
 export const card_stack = styled.div`
-  width: 300px;
-  height: 90px;
-  border: 0.1px white solid;
+  width: 400px;
+  height: 100px;
+  /* border: 0.1px white solid; */
   border-radius: 10px;
-  margin-top: 20px;
-  flex-wrap: nowrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: scroll;
 `
 
 export const info_colum_second = styled.div`
@@ -109,7 +153,8 @@ export const info_colum_second = styled.div`
   margin-right: 20px;
   margin-left: 0;
   width: 500px;
-  margin-top: 28px;
+  margin-bottom: 20px;
+  /* margin-top: 28px; */
 
 `
 
@@ -127,10 +172,11 @@ export const info_currentProject = styled.div`
   /* border: #4E41CB 1px solid; */
   border-radius: 10px;
   cursor: pointer;
-  font-weight: 200;
-  margin-top: 50px;
+  font-weight: 300;
+  margin-top: 40px;
   width: 90%;
   height: 230px;
+  font-size: 18px;
   /* display: flex;
   justify-content: center;
   align-items: center;
@@ -143,15 +189,37 @@ export const info_openProjects = styled.div`
   /* border: #4E41CB 1px solid; */
   border-radius: 10px;
   cursor: pointer;
-  font-weight: 200;
-  margin-top: 30px;
+  font-weight: 300;
+  margin-top: 40px;
   width: 90%;
   height: 230px;
-  
+  font-size: 18px;
   /* display: flex;
   justify-content: center;
   align-items: center;
   text-align: center; */
+`
+
+
+export const SelectedSkillsUl = styled.ul`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 10px 40px 10px 0;
+  text-align: center;
+
+`
+
+export const SelectedSkills = styled.li`
+  margin: 2px;
+  border-radius: 18px;
+  border: 1px lightgray solid;
+  padding: 8px 20px;
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0);
+  color: white;
 `
 
 
@@ -191,8 +259,8 @@ export const Modal_card_content = styled.div`
 `
 
 export const modal_colum_first = styled.div`
-    width: 300px;
-    height: 500px;
+    width: 330px;
+    height: 450px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -201,15 +269,21 @@ export const modal_colum_first = styled.div`
     /* margin-top: 50px; */
     margin-left: 0;
     margin-right: 30px;
+    border: 0.5px solid gray;
+   border-radius: 10px;
+    margin-top: 30px;
+    padding-top: 0;
+    /* background: linear-gradient(to left, rgb(132, 140, 241, 0.9), rgb(198, 148, 201, 0.6)); */
 `
 
 export const modal_img = styled.img`
-
-    width: 100%; /* 이미지를 부모 요소의 가로 크기에 맞춥니다. */
+    width: 80%; /* 이미지를 부모 요소의 가로 크기에 맞춥니다. */
     height: auto; /* 이미지를 부모 요소의 세로 크기에 맞춥니다. */
     border: 0.1px lightgray solid;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    /* margin-top: 0; */
+
 `
 
 export const modal_colum_second = styled.div`
@@ -226,6 +300,30 @@ export const modal_colum_second = styled.div`
     
     margin-top: 20px;
 `
+export const modal_card_nicnkname_input = styled.input`
+      border-radius: 10px;
+      margin-bottom: 10px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 78%;
+      height: 50px;
+      display: flex;
+      border: 0.5px solid gray;
+      border-radius: 10px;
+      font-family: inherit;
+      font-weight: 100;
+      font-size: 20px;
+      color: gray;
+`
+export const modal_card_span_title = styled.span`
+      font-weight: bolder;
+      font-size: 20px;
+      margin-right: auto;
+      margin-left: 38px;
+      margin-bottom: 8px;
+`
+
 export const modal_card_span = styled.span`
       font-weight: bolder;
       font-size: 20px;
@@ -233,6 +331,18 @@ export const modal_card_span = styled.span`
       margin-top: 15px;
       margin-left: 5px;
       margin-bottom: 8px;
+`
+export const modal_card_spanBox = styled.div`
+  border-radius: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  border: 0.5px solid gray;
+  border-radius: 10px;
 `
 export const modal_card_div = styled.div`
   margin-right: auto;
@@ -246,22 +356,21 @@ export const modal_card_div = styled.div`
 
 export const modal_role_div = styled.div`
   margin-right: auto;
-  /* border: 0.1px solid lightgray;
-  border-radius: 10px; */
+  border: 0.5px solid gray;
+  border-radius: 10px;
   margin-bottom: 10px;
   width: 100%;
-  height: 50px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 `
 export const modal_stack_div = styled.div`
   margin-right: auto;
-  border: 0.1px solid lightgray;
+  border: 0.5px solid gray;
   border-radius: 10px;
-
   width: 100%;
-  height: 300px;
+  height: 270px;
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
@@ -293,8 +402,47 @@ export const modal_stack_select_li = styled.li`
   border-radius: 18px;
   padding: 5px 10px;
   font-size: 12px;
+  background: linear-gradient(to left, rgb(132, 140, 241, 0.9), rgb(198, 148, 201, 0.6));
   background-color: #848CF1;
   color: white;
+`
+
+export const modal_stack_addBox = styled.div`
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+      height: 30px;
+`
+
+export const modal_stack_insert_input = styled.input`
+      border-radius: 10px;
+
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 77%;
+      height: 30px;
+      display: flex;
+      border: 0.5px solid #848CF1;
+      border-radius: 10px;
+      font-family: inherit;
+      font-weight: 100;
+      font-size: 15px;
+      color: gray;
+      margin-right: 5px;
+`
+
+export const modal_stack_add = styled.div`
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+  color: #848CF1;
+  font-weight: 100;
+  font-size: 50px;
+  margin-bottom: 40px;
 `
 
 export const modal_selected_skills = styled.div`
@@ -304,7 +452,6 @@ export const modal_selected_skills = styled.div`
   overflow: auto;
   margin-bottom: 0;
 `
-
 export const modal_selected_span = styled.span`
   margin-left: 30px;
   font-weight: 100;
@@ -316,8 +463,10 @@ export const ModalCloseBtn = styled.div`
     border-radius: 10px;
     cursor: pointer;
     margin-left: auto;
+    margin-right: 59px;
     color: white;
-    background-color: #848CF1;
+    background: linear-gradient(to left, rgb(132, 140, 241, 0.9), rgb(198, 148, 201, 0.6));
+  background-color: #848CF1;
     display: flex;
     justify-content: center; /* 수평 가운데 정렬 */
     align-items: center; /* 수직 가운데 정렬 */
@@ -332,7 +481,7 @@ export const remove_skill = styled.button`
 `
 
 export const modal_be = styled.div`
-  width: 20%;
+  width: 30%;
   height: auto;
   padding: 10px 20px;
   border: none;
@@ -351,7 +500,8 @@ export const modal_be = styled.div`
     props.active
       ?
       css`
-          background-color: #848CF1;
+           background: linear-gradient(to left, rgb(132, 140, 241, 0.9), rgb(198, 148, 201, 0.6));
+            background-color: #848CF1;
         `
       :  css`
           background-color: white;
@@ -361,7 +511,7 @@ export const modal_be = styled.div`
 `;
 
 export const modal_fe = styled.div`
-  width: 20%;
+  width: 30%;
   height: auto;
   padding: 10px 20px;
   margin-left: 30px;
@@ -380,7 +530,8 @@ export const modal_fe = styled.div`
     props.active
       ?
       css`
-          background-color: #848CF1;
+         background: linear-gradient(to left, rgb(132, 140, 241, 0.9), rgb(198, 148, 201, 0.6));
+  background-color: #848CF1;
         `
       :  css`
           background-color: white;
@@ -389,3 +540,32 @@ export const modal_fe = styled.div`
         `}
 `;
 
+
+export const StyledImageContainer = styled.label`
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+`
+
+export const UploadButton = styled.button`
+  position: absolute;
+  right: 1px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0; /* 기본적으로 숨김 */
+  transition: opacity 0.3s;
+  /* 호버 시 보이기 */
+  ${StyledImageContainer}:hover & {
+    opacity: 1;
+  }
+
+  /* 클릭 시 보이기 */
+  &:active {
+    opacity: 1;
+  }
+`;

@@ -14,6 +14,11 @@ const Section = () => {
                     </Style.main_title_box>
                 </Style.main_box>
             </Style.main_section>
+
+            <Style.main_btn_box>
+                <Style.main_be_btn to='/list/be'>Back-End</Style.main_be_btn>
+                <Style.main_fe_btn to='/list/fe'>Front-End</Style.main_fe_btn>
+            </Style.main_btn_box>
        
        </>
     )
